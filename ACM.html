@@ -2,45 +2,66 @@
 	<head>
 		<style type="text/css">
 			body {margin:0;}
-			#nav-bar {
-				background-color: blue;
-				position: relative;
-				left: 0px;
-				top: 0px;
-				height: 10%;
+			.nav-bar {
+				background-color: white;
+
+				height: 13%;
 				width: 100%;
+				 overflow: hidden;
+				border-bottom: solid 1px;
+				border-color: #bdbfbf;
 
 			}
-			.nav-but{
-				background-color: red;
-				width: 10%;
-				height: 50%;
-			}				
-			#home{
-				position: absolute;
-				top:30%;
-				left:25%;
+			.nav-bar a{
+				float: left;
+			 	display:block;
+			 	text-align: center;
+			 	padding: 2.5% 26px;
+			 	text-decoration: none;
+			 	font-size: 18px;
+				border-right: solid 1px;
+				border-right-color:#aaaaaa;
+				padding: auto;
+				position: relative;
+				left: 22%;
+				color: black;
+				height: 100%;
+				top:0px;
+
 			}
-			#about{
-				position: absolute;
-				top:30%;
-				left:36%;
+			.nav-bar img{
+				height: 100%;
+				float: left; 
+				padding-left: 5%;
 			}
-			#member{
-				position: absolute;
-				top:30%;
-				left:47%;
+			.nav-bar a:hover {
+				background-color: #88b3c2;
+				cursor: pointer;
+				color: white;
 			}
-			#calendar{
-				position: absolute;
-				top:30%;
-				left:58%;
+
+			.nav-bar a.active {
+			    background-color:#c1f2ed;
+				color: black;
 			}
 			#contact{
-				position: absolute;
-				top:30%;
-				left:69%;
+
+				border: none;
 			}
+			#FB{
+				border: none;
+				top: 0px;
+			}
+			#FB:hover{
+				background-color: white;
+			}
+
+			#FB img{
+				position: absolute;
+				top: 30%;
+				height: 30px;
+			}
+
 			#main-body{
 				position: relative;
 				clear: both;
@@ -53,7 +74,7 @@
 		
 			}
 			#slides{
-				background-color: green;
+				background-color: #e3edec;
 				width: 100%;
 				left:0%;
 				height: 50%;
@@ -91,13 +112,15 @@
 		<script src="slideshow.js"></script>
 	</head>
 	<body onload="showSlides(1)">
-		<div id = "nav-bar">
-			<h1>ACM</h1>
-			<a href="" class ="nav-but" id = "home"><center><p>Home</p></center></a>
-			<a href="" class = "nav-but" id = "about"><center><p>About</p></center></a>
-			<a href="" class = "nav-but" id = "member"><center><p>Member</p></center></a>
-			<a href="" class = "nav-but" id = "calendar"><center><p>Calendar</p></center></a>
-			<a href="" class = "nav-but" id = "contact"><center><p>Contact</p></center></a>
+		<div class = "nav-bar">
+			<img src="logo.png"></img>
+			<a href="" class = "active" id = "home">Home</a>
+			<a href="" id = "about">About</a>
+			<a href="" id = "member">Member</a>
+			<a href="" id = "calendar">Calendar</a>
+			<a href="" id = "contact">Contact</a>
+			<a href="" id = "FB"><img src="fb.png"></img></a>
+
 		</div>
 		<div id = "main-body">
 			<div id = "slides">
