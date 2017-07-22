@@ -1,9 +1,9 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="MainStyle.css">
-		<style>
+		<style type="text/css">
 		.about-separaters {
-		clear:both;
+			clear:both;
 			background-color:gray;
 			color:white;
 			text-align:center;
@@ -17,7 +17,8 @@
 			width: 39.5%;
 			line-height:30px;
 		}
-		p {
+		#about-summary,
+		#why-join-panel p {
 			padding:20px;
 			line-height:30px;
 		}
@@ -33,17 +34,59 @@
 			width:33%;
 		}
 		#why-join-panel div img {
-		display:block;
+			display:block;
 			margin:auto;
 			width:90%;
-			
-	
 		}
+		.team-cards-row {
+			margin:auto;
+			clear:both;
+			width:auto;
+		}
+		.team-cards-col {
+		top:0px;
+			width:20%;
+			display:inline-block;
+			margin-bottom:16px;
+			padding: 0px 8px;
+		}
+		.row-items {
+			margin:auto;
+		}
+    	.team-card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+		.card-info-container {
+			padding: 0px 16px 5px 16px;
+		}
+		.officer-name {
+		}
+		.officer-title {
+			color: gray;
+		}
+		.contact-button {
+   			border: none;
+    		outline: 0;
+    		display: inline-block;
+    		padding: 8px;
+    		color: white;
+    		background-color: #000;
+    		text-align: center;
+    		cursor: pointer;
+    		width: 100%;
+		}
+		.contact-button:hover {
+    		background-color: #555;
+		}
+
+}
+		
 		
 		
 		</style>
 	</head>
 	<body onload="showSlides(1)">
+		
 		<div class = "nav-bar">
 			<img id="logo" src="graphics/logo.png" alt="ACM Logo">
 			<a href="index.html" id = "home">Home</a>
@@ -99,12 +142,121 @@
 					<h2>Our Team</h2>
 				</div>
 				<div id="team">
+					<div class="team-cards-row">
+						<div style="width: 28%; float:left;"><p></p></div>
+						<div class="team-cards-col">
+							<div class="team-card">
+								<img src="graphics/profile_pictures/president1.jpg" alt="President of Texas ACM" style="width: 100%">
+								<div class="card-info-container">
+									<h2 class="officer-name">April <br>Hare</h2>
+
+									<p class="officer-title">President of Texas ACM</p>
+									<p>Information</p>
+									<p><button class="contact-button">Contact</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="team-cards-col">
+							<div class="team-card">
+								<img src="graphics/profile_pictures/president2.jpg" alt="President of Texas ACM" style="width: 100%">
+								<div class="card-info-container">
+									<h2 class="officer-name">Arnav <br>Sastry</h2>
+									<p class="officer-title">President of Texas ACM</p>
+									<p>Information</p>
+									<p><button class="contact-button">Contact</button></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="team-cards-row">
+						<div style="width: 7%; float:left;"><p></p></div>
+						<div class="team-cards-col">
+							<div class="team-card">
+								<img src="graphics/profile_pictures/academic.jpg" alt="VP Academic" style="width: 100%">
+								<div class="card-info-container">
+									<h2 class="officer-name">Abhimanyu <br>Kamboji</h2>
+									<p class="officer-title">VP Academic</p>
+									<p>Information</p>
+									<p><button class="contact-button">Contact</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="team-cards-col">
+							<div class="team-card">
+								<img src="graphics/profile_pictures/corporate1.jpg" alt="VP Corporate" style="width: 100%">
+								<div class="card-info-container">
+									<h2 class="officer-name">Anthony <br>Gallop</h2>
+									<p class="officer-title">VP Corporate</p>
+									<p>Information</p>
+									<p><button class="contact-button">Contact</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="team-cards-col">
+							<div class="team-card">
+								<img src="graphics/profile_pictures/corporate2.jpg" alt="VP Corporate" style="width: 100%">
+								<div class="card-info-container">
+									<h2 class="officer-name">Lucas <br>Kabela</h2>
+									<p class="officer-title">VP Corporate</p>
+									<p>Information</p>
+									<p><button class="contact-button">Contact</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="team-cards-col">
+							<div class="team-card">
+								<img src="graphics/profile_pictures/internal.jpg" alt="VP Internal" style="width: 100%">
+								<div class="card-info-container">
+									<h2 class="officer-name">Ann <br>Yue</h2>
+									<p class="officer-title">Internal</p>
+									<p>Information</p>
+									<p><button class="contact-button">Contact</button></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="team-cards-row">
+					<div style="width: 18%; float:left;"><p></p></div>
+						<div class="team-cards-col">
+							<div class="team-card">
+								<img src="graphics/profile_pictures/humanresources.jpg" alt="VP HR" style="width: 100%">
+								<div class="card-info-container">
+									<h2 class="officer-name">Helen <br>Gai</h2>
+									<p class="officer-title">VP HR</p>
+									<p>Information</p>
+									<p><button class="contact-button">Contact</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="team-cards-col">
+							<div class="team-card">
+								<img src="graphics/profile_pictures/finance.jpg" alt="VP Finance" style="width: 100%">
+								<div class="card-info-container">
+									<h2 class="officer-name">Kevin (TK) <br>Ordonez</h2>
+									<p class="officer-title">VP Finance</p>
+									<p>Information</p>
+									<p><button class="contact-button">Contact</button></p>
+								</div>
+							</div>
+						</div>
+						<div class="team-cards-col">
+							<div class="team-card">
+								<img src="graphics/profile_pictures/social.jpg" alt="VP Social" style="width: 100%">
+								<div class="card-info-container">
+									<h2 class="officer-name">Sabrina <br>Herrero</h2>
+									<p class="officer-title">VP Social</p>
+									<p>Information</p>
+									<p><button class="contact-button">Contact</button></p>
+								</div>
+							</div>
+						</div>
+					</div>		
 				</div>
 			</div>
 		</div>
 		<!--
 		<div id="footer">
-			<p style="float: left;">Association for Computing Machinery at the University of Texas © 2017</p>
+			<p style="float: left;">Association for Computing Machinery at the University of Texas Â© 2017</p>
 			<p style="float: right;">Site Designed by Sabrina Herrero</p>
 		</div> -->
 	</body>
