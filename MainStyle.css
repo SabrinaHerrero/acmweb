@@ -47,6 +47,12 @@ body {
     background-color:#c1f2ed;
 	color: black;
 }
+.section-separaters {
+			clear:both;
+			background-color:gray;
+			color:white;
+			text-align:center;
+}
 #contact {
 	border: none;
 }

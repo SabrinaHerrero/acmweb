@@ -4,6 +4,12 @@ body {
 	padding:0px;
 	font-family: arial;
 }
+.section-separaters {
+			clear:both;
+			background-color:gray;
+			color:white;
+			text-align:center;
+}
 .page-content {
 	width:90%;
 	margin:auto;

@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
+
+
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css"/>
 	<link rel="stylesheet" type="text/css" href="slideshow.css"/>
@@ -9,16 +11,12 @@
 	<style type="text/css">
 		#events,
 		#news {
-			height:400px;
-		}
-		#events,
-		#news {
 			width:50%;
 			display:inline-block;
 		}
 		#events {
-			margin-left:0px;
-			background-color:aqua;
+			margin-right:-10px;
+			border-right: 2px solid black;
 		}
 		#news {
 			margin-right:0px;
@@ -105,11 +103,18 @@
 		</div>
 		<div class="page-content">
 			<div id="events">
-				<p>EVENTS</p>
+				<center>
+				<H1>Upcoming Events</H1>
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftexas.acm%2F&tabs=events&width=500&height=440&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="500" height="440" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</center>
 			</div>
 			<div id="news">
 				<p>NEWS</p>
 			</div>
+
+			<div class="section-separaters">
+				<h2 id="team-header">Sponsors</h2>
+			</div>	
 			<div id="sponsors">
 				<div>
 					<img class="gold-sponsors unpaid-sponsors" src="graphics/sponsorLogos/AmericanExpress.png" alt="American Express" />
@@ -128,6 +133,8 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- begin footer -->
 	<div id="footer" style="">
 		<div class="page-content">
 			<div id="credits_footer">
