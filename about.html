@@ -77,10 +77,77 @@
 		.contact-button:hover {
     		background-color: #555;
 		}	
+		#copied-confirmation {
+			display:none;
+			position:fixed;
+			top:40%;
+			left: 50%;
+    		transform: translate(-50%, 0);			
+			border-radius:10px;	
+			padding:10px;
+			background:#cccccc;		
+		}
+		/* Fading animation */
+		.fade {
+  			-webkit-animation-name: fade;
+			-webkit-animation-duration: 0.5s;
+			animation-name: fade;
+ 			animation-duration: 0.5s;
+		}
+
+		@-webkit-keyframes fade {
+ 			from {opacity: .1} 
+  			to {opacity: 1}
+		}
+
+		@keyframes fade {
+  			from {opacity: .1} 
+  			to {opacity: 1}
+		}
 	</style>
 </head>
 
 <body>
+	<script type="application/javascript">
+		var div = document.getElementById("copied-confirmation");
+		var initialOp = window.getComputedStyle(div).getPropertyValue("opacity");
+		var transitioning = initialOp != 0;
+		function copyTextToClipboard(email) {
+			
+			if (!transitioning)
+				alertCopied();
+		}
+		function alertCopied() {
+			transitioning = true;
+			fadeIn(0);
+			setTimeout(function() {fadeOut(1);}, 1200);			
+		}
+		function fadeOut(op) {
+		var div = document.getElementById("copied-confirmation");
+			if (op <= 0){
+		            div.style.display = 'none';
+		            transitioning = false;
+		        }
+		    else {
+		    	op -= 0.01;
+		    	div.style.opacity = op;
+		    	setTimeout(function() {fadeOut(op);}, 8);
+		    	
+		    }
+   		}
+   		function fadeIn(op) {
+   		var div = document.getElementById("copied-confirmation");
+			if (op >= 1){
+		            div.style.display = 'block';
+		        }
+		    else {
+		    	op += 0.01;
+		    	div.style.opacity = op;
+		    	setTimeout(function() {fadeIn(op);}, 1);
+		    	
+		    }
+   		}
+	</script>
 	<div id="top-banner">
 		<div class="page-content">
 			<ul id="navigation">
@@ -149,7 +216,7 @@
 							<h2 class="officer-name">April <br>Hare</h2>
 							<p class="officer-title">President of Texas ACM</p>
 							<p>Information</p>
-							<p><button class="contact-button">Email</button></p>
+							<p><button class="contact-button" onclick="copyTextToClipboard('ah@utacm.com');">Email</button></p>
 						</div>
 					</div>
 				</div>
@@ -305,6 +372,9 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div id="copied-confirmation" class="fade">
+		<h2>Email copied to Clipboard</h2>
 	</div>
 </body>
 </html>
