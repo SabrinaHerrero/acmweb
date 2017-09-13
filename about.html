@@ -1,7 +1,11 @@
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="MainStyle.css">
-		<style type="text/css">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<title>About Us</title>
+	<link rel="icon" type="image/ico" href="graphics/icon.ico" />
+	<style type="text/css">
 		.about-separaters {
 			clear:both;
 			background-color:gray;
@@ -39,18 +43,17 @@
 			width:90%;
 			margin-bottom:15px;
 		}
-
 		.team-cards-row {
 			margin:auto;
 			clear:both;
-			width:auto;
 		}
 		.team-cards-col {
-		top:0px;
+			top:0px;
 			width:20%;
 			display:inline-block;
 			margin-bottom:16px;
 			padding: 0px 8px;
+			vertical-align:top;
 		}
 		.row-items {
 			margin:auto;
@@ -79,187 +82,233 @@
 		}
 		.contact-button:hover {
     		background-color: #555;
-		}
+		}	
+	</style>
+</head>
 
-}
-		
-		
-		
-		</style>
-	</head>
-	<body onload="showSlides(1)">
-		
-		<div class = "nav-bar">
-			<img id="logo" src="graphics/logo.png" alt="ACM Logo">
-			<a href="index.html" id = "home">Home</a>
-			<a href="about.html" class = "active" id = "about">About</a>
-			<a href="" id = "member">Member</a>
-			<a href="" id = "calendar">Calendar</a>
-			<a href="" id = "contact">Contact</a>
-			<a href="" id = "FB"><img src="graphics/fb.png" alt="facebook"></a>
-
+<body>
+	<div id="top-banner">
+		<div class="page-content">
+			<ul id="navigation">
+				<li id="logo-li"><a href="index.html"><img id="logo" src="graphics/logo.png" alt="ACM Logo"/></a></li>
+				<li></li>
+				<li class="nav-list"><a href="index.html">Home</a></li>
+				<li class="nav-list"><a href="about.html" class="active">About</a></li>
+				<li class="nav-list"><a href="membership.html">Membership</a></li>
+				<li class="nav-list"><a href="calendar.html">Calendar</a></li>
+				<li class="nav-list"><a href="contact.html">Contact</a></li>
+				<li class="connect"><a href="https://www.facebook.com/texas.acm"><img src="graphics/fb.png" align="middle" alt="Facebook" style="margin-left:10px;"/></a></li>
+				<li class="connect"><a href="https://discordapp.com/invite/7PtYCAm"><img src="graphics/discord.png" align="middle" alt="Discord"/></a></li>
+				<li class="connect"><a href="https://twitter.com/acm_texas"><img src="graphics/twitter.png" align="middle" alt="Discord"/></a></li>
+			</ul>
 		</div>
-		<div id = "main-body" style="height: 77%;">
-
-			<div id = "main">
-				<div id="about-summary">
-					<div id="about-us">
-						<h2 class="about-section-titles">About Us</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas orci sed tortor cursus, ac maximus mauris tincidunt. 
-						Etiam mattis augue eu ante varius, sed ornare ligula mattis. Duis magna ipsum, vulputate nec urna pellentesque, mattis suscipit urna. 
-						Fusce interdum nisi ac orci dignissim, vel elementum turpis sollicitudin. </p>
+	</div>
+	<div id="main-panel" class="page-content">
+		<div id="about-summary">
+			<div id="about-us">
+				<h2 class="about-section-titles">About Us</h2>
+				<p>The Association for Computing Machinery is a UT chapter of the national ACM, and exists to create a community among Computer Science 
+				students and anyone interested in technology. The ACM holds events that serves its members or the community, events that members are 
+				interested in attending, and is open to any new projects or ideas proposed. </p>
+			</div>
+			<img align="right" id="about-summary-photo" src="graphics/about_group_photo.jpg" alt="ACM Group Photo"/>	
+		</div>
+		<div class="about-separaters">
+			<h2 id="why-join-header">Why Join?</h2>
+		</div>
+		<div id="why-join-panel">
+			<div id="academic">
+				<h2 class="about-section-titles">Academic</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas orci sed tortor cursus, ac maximus mauris tincidunt. 
+				Etiam mattis augue eu ante varius, sed ornare ligula mattis. Duis magna ipsum, vulputate nec urna pellentesque, mattis suscipit urna. 
+				Fusce interdum nisi ac orci dignissim, vel elementum turpis sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, 
+				nascetur ridiculus mus. Proin nec ornare quam, ac rhoncus metus. Praesent quis velit commodo, faucibus velit vel, consectetur sapien. </p>
+				<img src="graphics/academic.jpg" alt="Academic help"/>
+			</div>
+			<div id="pro-net">
+			<h2 class="about-section-titles">Network / Professional</h2>
+				<img src="graphics/lecture.jpg" alt="Networking and Development"/>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas orci sed tortor cursus, ac maximus mauris tincidunt. 
+				Etiam mattis augue eu ante varius, sed ornare ligula mattis. Duis magna ipsum, vulputate nec urna pellentesque, mattis suscipit urna. 
+				Fusce interdum nisi ac orci dignissim, vel elementum turpis sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, 
+				nascetur ridiculus mus. Proin nec ornare quam, ac rhoncus metus. Praesent quis velit commodo, faucibus velit vel, consectetur sapien. </p>
+			</div>
+			<div id="social">
+				<h2 class="about-section-titles">Social</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas orci sed tortor cursus, ac maximus mauris tincidunt. 
+				Etiam mattis augue eu ante varius, sed ornare ligula mattis. Duis magna ipsum, vulputate nec urna pellentesque, mattis suscipit urna. 
+				Fusce interdum nisi ac orci dignissim, vel elementum turpis sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, 
+				nascetur ridiculus mus. Proin nec ornare quam, ac rhoncus metus. Praesent quis velit commodo, faucibus velit vel, consectetur sapien. </p>
+				<img src="graphics/social.jpg" alt="Social Activities"/>
+			</div>
+		</div>
+		<div class="about-separaters">
+			<h2 id="team-header">Our Team</h2>
+		</div>	
+		<div id="team">
+			<div class="team-cards-row">
+				<div style="width: 28%; float:left;"><p></p></div>
+				<div class="team-cards-col">
+					<div class="team-card">
+						<img src="graphics/profile_pictures/president1.jpg" alt="President of Texas ACM" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="officer-name">April <br>Hare</h2>
+							<p class="officer-title">President of Texas ACM</p>
+							<p>Information</p>
+							<p><button class="contact-button">Email</button></p>
+						</div>
 					</div>
-					<img id="about-summary-photo" src="graphics/about_group_photo.jpg" alt="ACM Group Photo">
 				</div>
-				<div class="about-separaters">
-					<h2>Why Join?</h2>
-				</div>
-				<div id="why-join-panel">
-					<div id="academic">
-						<h2 class="about-section-titles">Academic</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas orci sed tortor cursus, ac maximus mauris tincidunt. 
-						Etiam mattis augue eu ante varius, sed ornare ligula mattis. Duis magna ipsum, vulputate nec urna pellentesque, mattis suscipit urna. 
-						Fusce interdum nisi ac orci dignissim, vel elementum turpis sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, 
-						nascetur ridiculus mus. Proin nec ornare quam, ac rhoncus metus. Praesent quis velit commodo, faucibus velit vel, consectetur sapien. </p>
-						<img src="graphics/academic.jpg" alt="Academic help">
-					</div>
-					<div id="pro-net">
-					<h2 class="about-section-titles">Network / Professional</h2>
-						<img src="graphics/lecture.jpg" alt="Networking and Development">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas orci sed tortor cursus, ac maximus mauris tincidunt. 
-						Etiam mattis augue eu ante varius, sed ornare ligula mattis. Duis magna ipsum, vulputate nec urna pellentesque, mattis suscipit urna. 
-						Fusce interdum nisi ac orci dignissim, vel elementum turpis sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, 
-						nascetur ridiculus mus. Proin nec ornare quam, ac rhoncus metus. Praesent quis velit commodo, faucibus velit vel, consectetur sapien. </p>
-					</div>
-					<div id="social">
-						<h2 class="about-section-titles">Social</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas orci sed tortor cursus, ac maximus mauris tincidunt. 
-						Etiam mattis augue eu ante varius, sed ornare ligula mattis. Duis magna ipsum, vulputate nec urna pellentesque, mattis suscipit urna. 
-						Fusce interdum nisi ac orci dignissim, vel elementum turpis sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, 
-						nascetur ridiculus mus. Proin nec ornare quam, ac rhoncus metus. Praesent quis velit commodo, faucibus velit vel, consectetur sapien. </p>
-						<img src="graphics/social.jpg" alt="Social Activities">
+				<div class="team-cards-col">
+					<div class="team-card">
+						<img src="graphics/profile_pictures/president2.jpg" alt="President of Texas ACM" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="officer-name">Arnav <br>Sastry</h2>
+							<p class="officer-title">President of Texas ACM</p>
+							<p>Information</p>
+							<p><button class="contact-button">Email</button></p>
+						</div>
 					</div>
 				</div>
-				<div class="about-separaters">
-					<h2>Our Team</h2>
+			</div>
+			<div class="team-cards-row">
+				<div style="width: 6.2%; float:left;"><p></p></div>
+				<div class="team-cards-col">
+					<div class="team-card">
+						<img src="graphics/profile_pictures/academic.jpg" alt="VP Academic" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="officer-name">Abhimanyu <br>Kamboji</h2>
+							<p class="officer-title">VP Academic</p>
+							<p>Information</p>
+							<p><button class="contact-button">Email</button></p>
+						</div>
+					</div>
 				</div>
-				<div id="team">
-					<div class="team-cards-row">
-						<div style="width: 28%; float:left;"><p></p></div>
-						<div class="team-cards-col">
-							<div class="team-card">
-								<img src="graphics/profile_pictures/president1.jpg" alt="President of Texas ACM" style="width: 100%">
-								<div class="card-info-container">
-									<h2 class="officer-name">April <br>Hare</h2>
-
-									<p class="officer-title">President of Texas ACM</p>
-									<p>Information</p>
-									<p><button class="contact-button">Contact</button></p>
-								</div>
-							</div>
-						</div>
-						<div class="team-cards-col">
-							<div class="team-card">
-								<img src="graphics/profile_pictures/president2.jpg" alt="President of Texas ACM" style="width: 100%">
-								<div class="card-info-container">
-									<h2 class="officer-name">Arnav <br>Sastry</h2>
-									<p class="officer-title">President of Texas ACM</p>
-									<p>Information</p>
-									<p><button class="contact-button">Contact</button></p>
-								</div>
-							</div>
+				<div class="team-cards-col">
+					<div class="team-card">
+						<img src="graphics/profile_pictures/corporate1.jpg" alt="VP Corporate" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="officer-name">Anthony <br>Gallop</h2>
+							<p class="officer-title">VP Corporate</p>
+							<p>Information</p>
+							<p><button class="contact-button">Email</button></p>
 						</div>
 					</div>
-					<div class="team-cards-row">
-						<div style="width: 7%; float:left;"><p></p></div>
-						<div class="team-cards-col">
-							<div class="team-card">
-								<img src="graphics/profile_pictures/academic.jpg" alt="VP Academic" style="width: 100%">
-								<div class="card-info-container">
-									<h2 class="officer-name">Abhimanyu <br>Kamboji</h2>
-									<p class="officer-title">VP Academic</p>
-									<p>Information</p>
-									<p><button class="contact-button">Contact</button></p>
-								</div>
-							</div>
-						</div>
-						<div class="team-cards-col">
-							<div class="team-card">
-								<img src="graphics/profile_pictures/corporate1.jpg" alt="VP Corporate" style="width: 100%">
-								<div class="card-info-container">
-									<h2 class="officer-name">Anthony <br>Gallop</h2>
-									<p class="officer-title">VP Corporate</p>
-									<p>Information</p>
-									<p><button class="contact-button">Contact</button></p>
-								</div>
-							</div>
-						</div>
-						<div class="team-cards-col">
-							<div class="team-card">
-								<img src="graphics/profile_pictures/corporate2.jpg" alt="VP Corporate" style="width: 100%">
-								<div class="card-info-container">
-									<h2 class="officer-name">Lucas <br>Kabela</h2>
-									<p class="officer-title">VP Corporate</p>
-									<p>Information</p>
-									<p><button class="contact-button">Contact</button></p>
-								</div>
-							</div>
-						</div>
-						<div class="team-cards-col">
-							<div class="team-card">
-								<img src="graphics/profile_pictures/internal.jpg" alt="VP Internal" style="width: 100%">
-								<div class="card-info-container">
-									<h2 class="officer-name">Ann <br>Yue</h2>
-									<p class="officer-title">Internal</p>
-									<p>Information</p>
-									<p><button class="contact-button">Contact</button></p>
-								</div>
-							</div>
+				</div>
+				<div class="team-cards-col">
+					<div class="team-card">
+						<img src="graphics/profile_pictures/corporate2.jpg" alt="VP Corporate" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="officer-name">Lucas <br>Kabela</h2>
+							<p class="officer-title">VP Corporate</p>
+							<p>Information</p>
+							<p><button class="contact-button">Email</button></p>
 						</div>
 					</div>
-					<div class="team-cards-row">
-					<div style="width: 18%; float:left;"><p></p></div>
-						<div class="team-cards-col">
-							<div class="team-card">
-								<img src="graphics/profile_pictures/humanresources.jpg" alt="VP HR" style="width: 100%">
-								<div class="card-info-container">
-									<h2 class="officer-name">Helen <br>Gai</h2>
-									<p class="officer-title">VP HR</p>
-									<p>Information</p>
-									<p><button class="contact-button">Contact</button></p>
-								</div>
-							</div>
+				</div>
+				<div class="team-cards-col">
+					<div class="team-card">
+						<img src="graphics/profile_pictures/internal.jpg" alt="VP Internal" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="officer-name">Ann <br>Yue</h2>
+							<p class="officer-title">VP Internal</p>
+							<p>Information</p>
+							<p><button class="contact-button">Email</button></p>
 						</div>
-						<div class="team-cards-col">
-							<div class="team-card">
-								<img src="graphics/profile_pictures/finance.jpg" alt="VP Finance" style="width: 100%">
-								<div class="card-info-container">
-									<h2 class="officer-name">Kevin (TK) <br>Ordonez</h2>
-									<p class="officer-title">VP Finance</p>
-									<p>Information</p>
-									<p><button class="contact-button">Contact</button></p>
-								</div>
-							</div>
+					</div>
+				</div>
+			</div>
+			<div class="team-cards-row">
+				<div style="width: 17%; float:left;"><p></p></div>
+				<div class="team-cards-col">
+					<div class="team-card">
+						<img src="graphics/profile_pictures/humanresources.jpg" alt="VP HR" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="officer-name">Helen <br>Gai</h2>
+							<p class="officer-title">VP HR</p>
+							<p>Information</p>
+							<p><button class="contact-button">Email</button></p>
 						</div>
-						<div class="team-cards-col">
-							<div class="team-card">
-								<img src="graphics/profile_pictures/social.jpg" alt="VP Social" style="width: 100%">
-								<div class="card-info-container">
-									<h2 class="officer-name">Sabrina <br>Herrero</h2>
-									<p class="officer-title">VP Social</p>
-									<p>Information</p>
-									<p><button class="contact-button">Contact</button></p>
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="team-cards-col">
+					<div class="team-card">
+						<img src="graphics/profile_pictures/finance.jpg" alt="VP Finance" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="officer-name">Kevin (TK) <br>Ordonez</h2>
+							<p class="officer-title">VP Finance</p>
+							<p>Information</p>
+							<p><button class="contact-button">Email</button></p>
 						</div>
-					</div>		
+					</div>
+				</div>
+				<div class="team-cards-col">
+					<div class="team-card">
+						<img src="graphics/profile_pictures/social.jpg" alt="VP Social" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="officer-name">Sabrina <br>Herrero</h2>
+							<p class="officer-title">VP Social</p>
+							<p>Information</p>
+							<p><button class="contact-button">Email</button></p>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>		
+	<div id="footer" style="">
+		<div class="page-content">
+			<div id="credits_footer">
+				<ul id="website-copyright-info">
+					<li>Association for Computing Machinery at the University of Texas © 2017</li>
+					<li style="float:right">Designed by Sabrina Herrero and Chia-Hua Lu</li>
+				</ul>
+			</div>
+			<hr>
+			<div id="extra-footer-links">
+				<div class="extra-footer-div">
+					<ul class="extra-footer-links">
+						<li class="extra-links-head"><a href="index.html">Home</a></li>
+						<li><a href="index.html#events">Events</a></li>
+						<li><a href="index.html#news">News</a></li>
+						<li><a href="index.html#sponsors">Sponsors</a></li>
+					</ul>
+				</div>
+				<div class="extra-footer-div">
+					<ul class="extra-footer-links">
+						<li class="extra-links-head"><a href="about.html">About</a></li>
+						<li><a href="about.html#about-summary">About Us</a></li>
+						<li><a href="about.html#why-join-header">Why Join</a></li>
+						<li><a href="about.html#team-header">Our Team</a></li>
+						<li><a href="documents/bylaws.pdf">Bylaws</a></li>
+						<li>Location</li>
+					</ul>
+				</div>
+				<div class="extra-footer-div">
+					<ul class="extra-footer-links">
+						<li class="extra-links-head"><a href="membership.html">Membership</a></li>
+						<li>Link1</li>
+						<li>Link2</li>
+						<li>Link3</li>
+					</ul>
+				</div>
+				<div class="extra-footer-div">
+					<ul class="extra-footer-links">
+						<li class="extra-links-head"><a href="contact.html">Contact</a></li>
+						<li>Email HR</li>
+					</ul>
+				</div>
+				<div class="extra-footer-div">
+					<ul class="extra-footer-links">
+						<li class="extra-links-head"><a>Social</a></li>
+						<li><a href="https://www.facebook.com/texas.acm">Facebook</a></li>
+						<li><a href="https://discordapp.com/invite/7PtYCAm">Discord</a></li>
+						<li><a href="https://twitter.com/acm_texas">Twitter</a></li>
+						<li><a href="https://www.facebook.com/groups/utcompetitive/about/">Competitive Programming</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<!--
-		<div id="footer">
-			<p style="float: left;">Association for Computing Machinery at the University of Texas Â© 2017</p>
-			<p style="float: right;">Site Designed by Sabrina Herrero</p>
-		</div> -->
-	</body>
+	</div>
+</body>
 </html>
