@@ -104,51 +104,27 @@
   			from {opacity: .1} 
   			to {opacity: 1}
 		}
+		.copyfrom {
+        	position: absolute;
+        	left: -9999px;
+    	}
 	</style>
 </head>
 
 <body>
-	<script type="application/javascript">
-		var div = document.getElementById("copied-confirmation");
-		var initialOp = window.getComputedStyle(div).getPropertyValue("opacity");
-		var transitioning = initialOp != 0;
-		function copyTextToClipboard(email) {
-			
-			if (!transitioning)
-				alertCopied();
-		}
-		function alertCopied() {
-			transitioning = true;
-			fadeIn(0);
-			setTimeout(function() {fadeOut(1);}, 1200);			
-		}
-		function fadeOut(op) {
-		var div = document.getElementById("copied-confirmation");
-			if (op <= 0){
-		            div.style.display = 'none';
-		            transitioning = false;
-		        }
-		    else {
-		    	op -= 0.01;
-		    	div.style.opacity = op;
-		    	setTimeout(function() {fadeOut(op);}, 8);
-		    	
-		    }
-   		}
-   		function fadeIn(op) {
-   		var div = document.getElementById("copied-confirmation");
-			if (op >= 1){
-		            div.style.display = 'block';
-		        }
-		    else {
-		    	op += 0.01;
-		    	div.style.opacity = op;
-		    	setTimeout(function() {fadeIn(op);}, 1);
-		    	
-		    }
-   		}
-	</script>
-	<div id="top-banner">
+    <script>
+    var input = document.querySelector("input.copyfrom"); // select the input field
+
+	function showpropval() {
+	    var selectedValues = getSelectValues(this); // get selected values
+	    input.
+	    input.value = test.join(','); // join them in a comma separated list
+	    input.select(); // select offscreen inputs text
+	    document.execCommand("copy"); // copy it
+	    this.focus(); // focus back on original, so we don't see any glitches
+	}
+    </script>
+   	<div id="top-banner">
 		<div class="page-content">
 			<ul id="navigation">
 				<li id="logo-li"><a href="index.html"><img id="logo" src="graphics/logo.png" alt="ACM Logo"/></a></li>
@@ -216,7 +192,7 @@
 							<h2 class="officer-name">April <br>Hare</h2>
 							<p class="officer-title">President of Texas ACM</p>
 							<p>Information</p>
-							<p><button class="contact-button" onclick="copyTextToClipboard('ah@utacm.com');">Email</button></p>
+							<p><button class="contact-button" data-clipboard-text="email" data-clipboard-acton="copy">Email</button></p>
 						</div>
 					</div>
 				</div>
@@ -376,5 +352,6 @@
 	<div id="copied-confirmation" class="fade">
 		<h2>Email copied to Clipboard</h2>
 	</div>
+	<input class='copyfrom' tabindex='-1' style="display:hidden">
 </body>
 </html>
