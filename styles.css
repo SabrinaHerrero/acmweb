@@ -127,4 +127,20 @@ body {
 .bronze-sponsors {
 	height:80px;
 }
+#sponsors {
+	clear:both;
+	margin-top:0px;
+	padding:15px 0px 15px 0px;
+	display:inline-block;
+	text-align:center;
+	height:auto; 
+	width:100%;
+}
+#sponsors img {
+	margin:20px;
+}
+#sponsors div {
+	padding:auto;
+	width:100%;
+}
 
