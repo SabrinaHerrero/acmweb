@@ -12,14 +12,14 @@
 			width: 39.5%;
 			line-height:30px;
 		}
-		#about-summary,
 		#why-join-panel p {
 			padding:20px;
 			line-height:30px;
 		}
 		#about-summary {
 			padding:15px;
-}
+			line-height:30px;
+		}
 		#about-summary-photo {
 			width: 55%;
 			margin-bottom:15px;
@@ -57,8 +57,6 @@
 		.card-info-container {
 			padding: 0px 16px 5px 16px;
 		}
-		.officer-name {
-		}
 		.officer-title {
 			color: gray;
 		}
@@ -89,43 +87,10 @@
 			padding:10px;
 			background:#cccccc;		
 		}
-		/* Fading animation */
-		.fade {
-  			-webkit-animation-name: fade;
-			-webkit-animation-duration: 0.5s;
-			animation-name: fade;
- 			animation-duration: 0.5s;
-		}
-
-		@-webkit-keyframes fade {
- 			from {opacity: .1} 
-  			to {opacity: 1}
-		}
-
-		@keyframes fade {
-  			from {opacity: .1} 
-  			to {opacity: 1}
-		}
-		.copyfrom {
-        	position: absolute;
-        	left: -9999px;
-    	}
 	</style>
 </head>
 
 <body>
-    <script>
-    var input = document.querySelector("input.copyfrom"); // select the input field
-
-	function showpropval() {
-	    var selectedValues = getSelectValues(this); // get selected values
-	    input.
-	    input.value = test.join(','); // join them in a comma separated list
-	    input.select(); // select offscreen inputs text
-	    document.execCommand("copy"); // copy it
-	    this.focus(); // focus back on original, so we don't see any glitches
-	}
-    </script>
    	<div id="top-banner">
 		<div class="page-content">
 			<ul id="navigation">
@@ -181,8 +146,8 @@
 				<img src="graphics/social.jpg" alt="Social Activities"/>
 			</div>
 		</div>
-		<div class="section-separaters">
-			<h2 id="location-header">Location</h2>
+		<div class="section-separaters" id="location-header">
+			<h2>Location</h2>
 		</div>		
 		<center>
 		<img src="graphics/gates_dell_complex.jpg" alt="GDC" style="width:40%; display:inline-block; vertical-align:top;"/>
@@ -314,62 +279,5 @@
 
 	<!-- begin footer -->
 
-	<div id="footer" style="">
-		<div class="page-content">
-			<div id="credits_footer">
-				<ul id="website-copyright-info">
-					<li>Association for Computing Machinery at the University of Texas © 2017</li>
-					<li style="float:right">Designed by Sabrina Herrero and Chia-Hua Lu</li>
-				</ul>
-			</div>
-			<hr>
-			<div id="extra-footer-links">
-				<div class="extra-footer-div">
-					<ul class="extra-footer-links">
-						<li class="extra-links-head"><a href="index.html">Home</a></li>
-						<li><a href="index.html#events">Events</a></li>
-						<li><a href="index.html#news">News</a></li>
-						<li><a href="index.html#sponsors">Sponsors</a></li>
-					</ul>
-				</div>
-				<div class="extra-footer-div">
-					<ul class="extra-footer-links">
-						<li class="extra-links-head"><a href="about.html">About</a></li>
-						<li><a href="about.html#about-summary">About Us</a></li>
-						<li><a href="about.html#why-join-header">Why Join</a></li>
-						<li><a href="about.html#team-header">Our Team</a></li>
-						<li><a href="documents/bylaws.pdf" target="_blank">Bylaws</a></li>
-						<li>Location</li>
-					</ul>
-				</div>
-				<div class="extra-footer-div">
-					<ul class="extra-footer-links">
-						<li class="extra-links-head"><a href="corporate.html">Corporate</a></li>
-						<li>Link1</li>
-						<li>Link2</li>
-						<li>Link3</li>
-					</ul>
-				</div>
-				<div class="extra-footer-div">
-					<ul class="extra-footer-links">
-						<li class="extra-links-head"><a href="contact.html">Contact</a></li>
-						<li>Email HR</li>
-					</ul>
-				</div>
-				<div class="extra-footer-div">
-					<ul class="extra-footer-links">
-						<li class="extra-links-head"><a>Social</a></li>
-						<li><a href="https://www.facebook.com/texas.acm" target="_blank">Facebook</a></li>
-						<li><a href="https://discordapp.com/invite/7PtYCAm" target="_blank">Discord</a></li>
-						<li><a href="https://www.facebook.com/groups/utcompetitive/about/">Competitive Programming</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="copied-confirmation" class="fade">
-		<h2>Email copied to Clipboard</h2>
-	</div>
-	<input class='copyfrom' tabindex='-1' style="display:hidden">
 </body>
 </html>

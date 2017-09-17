@@ -85,6 +85,9 @@
 
 		<!-- End of Slideshow Code -->
 		</div>
+		<!-- Slideshow.js script must be attached BELOW the slideshow's html content to work properly -->
+		<script type="application/javascript" src="javascript/slideshow.js"></script> 
+
 		<div class="page-content">
 			<div id="events">
 				<center>
@@ -99,10 +102,10 @@
 				</center>
 			</div>
 
-			<div class="section-separaters">
+			<div class="section-separaters" id="sponsors">
 				<h2 id="team-header">Sponsors</h2>
 			</div>	
-			<div id="sponsors">
+			<div id="sponsors-div">
 				<div>
 					<img class="gold-sponsors unpaid-sponsors" src="graphics/sponsorLogos/AmericanExpress.png" alt="American Express" />
 					<img class="gold-sponsors" src="graphics/sponsorLogos/CapitalOne.png" alt="Capital One" />
@@ -122,114 +125,8 @@
 	</div>
 
 	<!-- begin footer -->
-	
-	<div id="footer" style="">
-		<div class="page-content">
-			<div id="credits_footer">
-				<ul id="website-copyright-info">
-					<li>Association for Computing Machinery at the University of Texas © 2017</li>
-					<li style="float:right">Designed by Sabrina Herrero and Chia-Hua Lu</li>
-				</ul>
-			</div>
-			<hr/>
-			<div id="extra-footer-links">
-				<div class="extra-footer-div">
-					<ul class="extra-footer-links">
-						<li class="extra-links-head"><a href="index.html">Home</a></li>
-						<li><a href="index.html#events">Events</a></li>
-						<li><a href="index.html#news">News</a></li>
-						<li><a href="index.html#sponsors">Sponsors</a></li>
-					</ul>
-				</div>
-				<div class="extra-footer-div">
-					<ul class="extra-footer-links">
-						<li class="extra-links-head"><a href="about.html">About</a></li>
-						<li><a href="about.html#about-summary">About Us</a></li>
-						<li><a href="about.html#why-join-header">Why Join</a></li>
-						<li><a href="about.html#team-header">Our Team</a></li>
-						<li><a href="documents/bylaws.pdf" target="_blank">Bylaws</a></li>
-						<li>Location</li>
-					</ul>
-				</div>
-				<div class="extra-footer-div">
-					<ul class="extra-footer-links">
-						<li class="extra-links-head"><a href="membership.html">Membership</a></li>
-						<li>Link1</li>
-						<li>Link2</li>
-						<li>Link3</li>
-						<!--<li><a href="http://www.facebook.com" id="admin-login">Admin Login</a></li>-->
-					</ul>
-				</div>
-				<div class="extra-footer-div">
-					<ul class="extra-footer-links">
-						<li class="extra-links-head"><a href="corporate.html">Corporate</a></li>
-						<li>Email HR</li>
-					</ul>
-				</div>
-				<div class="extra-footer-div">
-					<ul class="extra-footer-links">
-						<li class="extra-links-head"><a>Social</a></li>
-						<li><a href="https://www.facebook.com/texas.acm" target="_blank">Facebook</a></li>
-						<li><a href="https://discordapp.com/invite/7PtYCAm" target="_blank">Discord</a></li>
-						<li><a href="https://www.facebook.com/groups/utcompetitive/about/">Competitive Programming</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-<script type="application/javascript">
-var slideIndex = 0;
-var nanoseconds = 4000;
-timedSlideShow();
-var timer = setInterval(function() {timedSlideShow();}, nanoseconds);
 
-//setTimeout(timedSlideShow(), 2000);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  clearInterval(timer);
-  //document.getElementById("slideIndexI").innerHTML = slideIndex;
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  //document.getElementById("slideIndexF").innerHTML = slideIndex;
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";  
-  timer = setInterval(function() {timedSlideShow();}, nanoseconds); 
-}
-
-function timedSlideShow() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    //setTimeout(timedSlideShow, 2000); // Change image every 2 seconds
-}
-</script>
 </body>
 
 </html>
