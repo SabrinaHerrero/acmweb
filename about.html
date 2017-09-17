@@ -3,6 +3,8 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link rel="stylesheet" type="text/css" href="tooltip.css"/>
+
 	<title>About Us</title>
 	<link rel="icon" type="image/ico" href="graphics/icon.ico" />
 	<style type="text/css">
@@ -76,17 +78,7 @@
 		}	
 		#office-info {
 			list-style:disc;
-		}
-		#copied-confirmation {
-			display:none;
-			position:fixed;
-			top:40%;
-			left: 50%;
-    		transform: translate(-50%, 0);			
-			border-radius:10px;	
-			padding:10px;
-			background:#cccccc;		
-		}
+		}					
 	</style>
 </head>
 
@@ -177,7 +169,8 @@
 							<h2 class="officer-name">April <br>Hare</h2>
 							<p class="officer-title">President of Texas ACM</p>
 							<p>Information</p>
-							<p><button class="contact-button" data-clipboard-text="email" data-clipboard-acton="copy">pres@texasacm.org</button></p>
+							<p><button class="contact-button" data-clipboard-text="pres@texasacm.org"
+							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Get Email!</button></p>
 						</div>
 					</div>
 				</div>
@@ -188,7 +181,8 @@
 							<h2 class="officer-name">Arnav <br>Sastry</h2>
 							<p class="officer-title">President of Texas ACM</p>
 							<p>Information</p>
-							<p><button class="contact-button">pres@texasacm.org</button></p>
+							<p><button class="contact-button" data-clipboard-text="pres@texasacm.org"
+							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Get Email!</button></p>
 						</div>
 					</div>
 				</div>
@@ -201,7 +195,8 @@
 							<h2 class="officer-name">Abhimanyu <br>Kamboji</h2>
 							<p class="officer-title">VP Academic</p>
 							<p>Information</p>
-							<p><button class="contact-button">academics@texasacm.org</button></p>
+							<p><button class="contact-button" data-clipboard-text="academics@texasacm.org"
+							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Get Email!</button></p>
 						</div>
 					</div>
 				</div>
@@ -212,7 +207,8 @@
 							<h2 class="officer-name">Anthony <br>Gallop</h2>
 							<p class="officer-title">VP Corporate</p>
 							<p>Information</p>
-							<p><button class="contact-button">corporate@texasacm.org</button></p>
+							<p><button class="contact-button" data-clipboard-text="corporate@texasacm.org"
+							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Get Email!</button></p>
 						</div>
 					</div>
 				</div>
@@ -223,7 +219,8 @@
 							<h2 class="officer-name">Lucas <br>Kabela</h2>
 							<p class="officer-title">VP Corporate</p>
 							<p>Information</p>
-							<p><button class="contact-button">corporate@texasacm.org</button></p>
+							<p><button class="contact-button" data-clipboard-text="corporate@texasacm.org"
+							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Get Email!</button></p>
 						</div>
 					</div>
 				</div>
@@ -234,7 +231,8 @@
 							<h2 class="officer-name">Ann <br>Yue</h2>
 							<p class="officer-title">VP Internal</p>
 							<p>Information</p>
-							<p><button class="contact-button">finance@texasacm.org</button></p>
+							<p><button class="contact-button" data-clipboard-text="finance@texasacm.org"
+							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Get Email!</button></p>
 						</div>
 					</div>
 				</div>
@@ -247,7 +245,8 @@
 							<h2 class="officer-name">Helen <br>Gai</h2>
 							<p class="officer-title">VP HR</p>
 							<p>Information</p>
-							<p><button class="contact-button">hr@texasacm.org</button></p>
+							<p><button class="contact-button" data-clipboard-text="hr@texasacm.org"
+							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Get Email!</button></p>
 						</div>
 					</div>
 				</div>
@@ -258,7 +257,8 @@
 							<h2 class="officer-name">Kevin (TK) <br>Ordonez</h2>
 							<p class="officer-title">VP Finance</p>
 							<p>Information</p>
-							<p><button class="contact-button">finance@texasacm.org</button></p>
+							<p><button class="contact-button" data-clipboard-text="finance@texasacm.org"
+							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Get Email!</button></p>
 						</div>
 					</div>
 				</div>
@@ -269,13 +269,39 @@
 							<h2 class="officer-name">Sabrina <br>Herrero</h2>
 							<p class="officer-title">VP Social</p>
 							<p>Information</p>
-							<p><button class="contact-button">social@texasacm.org</button></p>
+							<p><button class="contact-button" data-clipboard-text="social@texasacm.org"
+							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Get Email!</button></p>
 						</div>
 					</div>
 				</div>
 			</div>		
 		</div>
-	</div>		
+	</div>	
+	
+	<!-- 2. Include library -->
+    <script src="javascript/clipboard.min.js"></script>
+
+    <!-- 3. Instantiate clipboard by passing a list of HTML elements -->
+    <script>
+	    var btns = document.querySelectorAll('button');
+	    var clipboard = new Clipboard(btns);
+	
+	    clipboard.on('success', function(e) {
+	        console.log(e);
+	    });
+	
+	    clipboard.on('error', function(e) {
+	        console.log(e);
+	    });
+	    
+	    function showTT(elem) {
+			elem.classList.add('tooltipped', 'tooltipped-s');
+		}
+		function hideTT(elem) {
+			elem.classList.remove('tooltipped', 'tooltipped-s');
+		}
+
+    </script>	
 
 	<!-- Footer -->
 	<iframe class="footer-iframe" src="footer.html" frameborder="0"  scrolling="no"></iframe>
