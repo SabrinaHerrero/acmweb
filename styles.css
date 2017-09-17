@@ -2,13 +2,16 @@
 body {
 	margin:0px;
 	padding:0px;
-	font-family: arial;
+	font-family: 'Roboto', sans-serif;
 }
 .section-separaters {
-			clear:both;
-			background-color:gray;
-			color:white;
-			text-align:center;
+	clear:both;
+	background-color:gray;
+	color:white;
+	text-align:center;
+}
+.section-header {
+	text-align:center;
 }
 .page-content {
 	width:90%;
