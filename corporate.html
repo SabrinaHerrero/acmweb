@@ -3,6 +3,7 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link rel="stylesheet" type="text/css" href="tooltip.css"/>
 	<title>Corporate</title>
 	<link rel="icon" type="image/ico" href="graphics/icon.ico" />
 	<style type="text/css">
@@ -79,8 +80,6 @@
 			border-bottom:1px solid #aaaaaa;
 			border-left: 1px solid white;
 		}
-		
-	
 	</style>
 </head>
 
@@ -108,7 +107,11 @@
 			</div>
 			<table>
 				<tr>
-					<td class="label-row label-col"></td>
+					<td class="label-row label-col" rowspan="2" style="text-align:left;">
+						<h1>Sponsor ACM<br/>Today!</h1>
+						<p><button class="contact-button" data-clipboard-text="corporate@texasacm.org"
+							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Copy Corporate Email</button></p>
+					</td>
 					<td class="label-row package-col bronze-head">
 						<h3>Bronze</h3>
 						<p>Basic package, best for companies starting up that want some visibility.</p>
@@ -123,7 +126,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="price-row label-col"></td>
+					<!-- td cell included in rowspan 2 -->
 					<td class="price-row package-col bronze-head">
 						<p>$1000<sub> /year</sub></p>
 					</td>
@@ -309,7 +312,10 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- Copy to Clipboard and Tooltip functionality for Contact Buttons -->
+    <script src="javascript/clipboard.min.js"></script>
+    <script src="javascript/clipboard-tooltips.js"></script>
+ 	
 	<!-- Footer -->
 	<iframe class="footer-iframe" src="footer.html" frameborder="0"  scrolling="no"></iframe>
 
