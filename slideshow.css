@@ -19,7 +19,8 @@ display:none
 
 .mySlides {
 	width:100%;
-	height:450px;	
+	/*height:450px;*/
+	height:35vw;	
 	overflow:hidden;
 	min-width:850px;
 	
@@ -63,7 +64,7 @@ display:none
   margin:auto;
   margin-top:-35px;
   width:50%;
-  bottom: 8px;
+  bottom: 0.62vw;
   text-align: center;
 }
 
@@ -80,8 +81,8 @@ display:none
 /* The dots/bullets/indicators */
 .dot {
   cursor:pointer;
-  height: 13px;
-  width: 13px;
+  height: 1vw;
+  width: 1vw;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
