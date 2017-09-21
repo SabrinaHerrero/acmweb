@@ -32,14 +32,14 @@ body {
 	float:left;
 }
 .nav-list {
-	margin-right:-6px;
+	margin-right:-0.47vw;
 	font-size:1.1vw;
 }
 .nav-list a{
 	padding: 2.307vw 1.15vw;
 	color:black;
 	border-right: 1px solid silver;
-	border-bottom:3px solid white;
+	border-bottom:0.23vw solid white;
 
 }
 .nav-list a:hover {
