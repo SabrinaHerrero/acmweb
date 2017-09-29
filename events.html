@@ -6,26 +6,225 @@
 	<title>Events</title>
 	<link rel="icon" type="image/ico" href="graphics/icon.ico" />
 	<style type="text/css">
+		.event-card {
+			float:left;
+			display:inline-block;
+			width:28%;
+			box-shadow: 0 0 15px #888888;
+			padding:10px;
+			margin:10px;
+			height:150px;
+			vertical-align: top;
+		}
+		.event-card img {
+			width:39%;
+			float:right;
+		}
+		.event-card div {
+			width:60%;
+			display: inline-block;
+		}
+		.event-signin {
+			color:orange;
+			text-decoration: none;
+		}
+		.event-signin:hover {
+			color:green;
+		}
 	
 	</style>
 </head>
+<!--   Event Item Template
+	<div class="event-card">
+				<div>
+					<h3>Event Name</h3>
+					<p>Location<br/>
+					Time</p>	
+					<!--<a class="event-signin" href="" target="_blank">Sign In</a>				
+				</div>
+				<img src="graphics/events/icon.png">
+			</div>
+-->
 
 <body>
 	<iframe class="header-iframe" src="header.html?topnav-events" frameborder="0"  scrolling="no"></iframe>
 
 	<div id="main-panel" class="page-content">
-		<div class="section-separaters" id="">
-			<h2>General Meetings / Tech Talks</h2>
+		<div>
+			<div class="section-separaters" id="special-social-events">
+				<h2>Special Social Events</h2>
+			</div>		
+
+			<div class="event-card">
+				<div>
+					<h3>Laser Tag</h3>
+					<p>Blazer Tag<br/>
+					Sat, Oct 7 6PM</p>	
+					<a class="event-signin" href="http://tinyurl.com/ACMLT2017" style="color:red" target="_blank">Sign Up Deadline 10/4 11:59PM</a>				
+				</div>
+				<img src="graphics/events/blaster.png">
+			</div>
+			<div class="event-card">
+				<div>
+					<h3>Fall Retreat</h3>
+					<p>Ink's Lake<br/>
+					Fri, Oct 13</p>	
+					<a class="event-signin" href="http://tinyurl.com/ACMRF2017" style="color:red" target="_blank">Sign Up Deadline 10/11 11:59PM</a>				
+				</div>
+				<img src="graphics/events/camping.png">
+			</div>
+		</div>
+
+
+		<div>
+			<div class="section-separaters" id="program-competition-events">
+				<h2>Programming Competitions</h2>
+			</div>		
+
+			<div class="event-card">
+				<div>
+					<h3>ProgComp #3</h3>
+					<p>GDC Basement<br/>
+					Fri, Oct 6 5:30PM</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/programming.png">
+			</div>
+			<div class="event-card">
+				<div>
+					<h3>ProgComp #4</h3>
+					<p>GDC Basement<br/>
+					Fri, Oct 20 5:30PM</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/programming.png">
+			</div>
 		</div>	
-		<div class="section-separaters" id="">
-			<h2>Programming Competitions</h2>
+		<div>
+			<div class="section-separaters" id="dinner-events">
+				<h2>Family Dinners</h2>
+			</div>		
+
+			<div class="event-card">
+				<div>
+					<h3>Family Dinner #2</h3>
+					<p>TBA<br/>
+					Fri, Oct 27 </p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/food.png">
+			</div>
+			<div class="event-card">
+				<div>
+					<h3>Thanksgiving Potluck</h3>
+					<p>TBA<br/>
+					Thurs, Nov 16</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/food.png">
+			</div>
 		</div>	
-		<div class="section-separaters" id="">
-			<h2>Game Nights</h2>
-		</div>	
-		<div class="section-separaters" id="">
-			<h2>Special Events Sign Up</h2>
-		</div>	
+
+
+		<div>
+			<div class="section-separaters" id="general-meeting-events">
+				<h2>General Meetings / Tech Talks</h2>
+			</div>	
+			<div class="event-card">
+				<div>
+					<h3>General Meeting #2</h3>
+					<p>TBA<br/>
+					Thurs, Oct 12, 7PM</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/presentation.png">
+			</div>
+			<div class="event-card">
+				<div>
+					<h3>Capital One Workshop</h3>
+					<p>TBA<br/>
+					Tue, Oct 24, 8PM</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/presentation.png">
+			</div>
+			<div class="event-card">
+				<div>
+					<h3>General Meeting #3</h3>
+					<p>TBA<br/>
+					Thurs, Oct 26, 7PM</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/presentation.png">
+			</div>
+			<div class="event-card">
+				<div>
+					<h3>General Meeting #4</h3>
+					<p>TBA<br/>
+					Thurs, Nov 9, 7PM</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/presentation.png">
+			</div>
+			<div class="event-card">
+				<div>
+					<h3>General Meeting #5</h3>
+					<p>TBA<br/>
+					Thurs, Nov 30, 7PM</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/presentation.png">
+			</div>
+			
+		</div>
+
+
+
+
+		<div>
+			<div class="section-separaters" id="game-night-events">
+				<h2>Game Nights</h2>
+			</div>		
+
+			<div class="event-card">
+				<div>
+					<h3>Boardgame Night #2</h3>
+					<p>TBA<br/>
+					Fri, Oct 6, 6PM</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/boardgames.png">
+			</div>
+			<div class="event-card">
+				<div>
+					<h3>Boardgame Night #3</h3>
+					<p>TBA<br/>
+					Fri, Oct 20</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/boardgames.png">
+			</div>
+			<div class="event-card">
+				<div>
+					<h3>Gaming Night #1</h3>
+					<p>TBA<br/>
+					Fri, Nov 3</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/vgames.png">
+			</div>
+			<div class="event-card">
+				<div>
+					<h3>Gaming Night #2</h3>
+					<p>TBA<br/>
+					Fri, Dec 8</p>	
+					<!--<a class="event-signin" href="">Sign In</a>-->				
+				</div>
+				<img src="graphics/events/vgames.png">
+			</div>
+		</div>
+
+		
 	</div>
 
 	<!-- Footer -->
