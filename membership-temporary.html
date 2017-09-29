@@ -36,8 +36,35 @@
 		display:inline-block;
 		float:center;
 	}
+	.perk-item {
+		width:30vw;
+	}
+	.perk-data {
+		width:20vw;
+		height:1.7vw;
+	}
+	.member-type{
+		background-color: #88b3c2;
+	    color: black;
+	    font-size: 25px;
+	    padding:10px;
+	    text-align: center;
+	}
+	.member-compare {
+		border-bottom:1px solid #aaaaaa;
+		list-style-type: none;
+	    border: 1px solid  #aaa;
+	    margin: 0;
+	    padding: 0;
+	    -webkit-transition: 0.3s;
+	    transition: 0.3s;
+	}
+	.member-compare:hover {
+	    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+	}
+	
 
-		
+	
 	</style>
 </head>
 
@@ -45,8 +72,112 @@
 	<iframe class="header-iframe" src="header.html?topnav-member" frameborder="0"  scrolling="no"></iframe>
 
 	<div id="main-panel" class="page-content">
+		<div class="section-separaters" id="signup">
+			<h2 >Become a Member</h2>
+		</div>
+			<center><p>Sign up today! Membership is only $10 / year. Fill out the form and see an ACM officer about payment.</p>
+			<button class="button"><span><a href = "https://docs.google.com/forms/d/1Yleg3CEZOMNn41pRjJuAEa0PiZx4A7NTUR2TCJrORGI/viewform?edit_requested=true" target = "_blank" style = "text-decoration: none; color: white;">Sign Up</a></span></button></center>
+			<center>
+				<table style="text-align: left;">
+					<tr>
+						<td class="perk-item"></td>
+						<td class="perk-data member-type">Non-Member</td>
+						<td class="perk-data member-type">Paid Member</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Attend General Meetings</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Attend Tech Talks</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Compete in Prog Comps</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Access Tutoring</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Join IM Soccer Team</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Hangout in Office</td>
+						<td class="perk-data">Hang out any time!</td>
+						<td class="perk-data">Hang out any time!</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Attend Lecture Series</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Buy Sodas</td>
+						<td class="perk-data">$0.50</td>
+						<td class="perk-data">$0.50</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Rent a Locker</td>
+						<td class="perk-data">Large: $15, Small: $10</td>
+						<td class="perk-data">$5 Discount</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">ACM Office Coffee</td>
+						<td class="perk-data">FREE</td>
+						<td class="perk-data">FREE</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">ACM Office Library</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Friends!</td>
+						<td class="perk-data">Yay</td>
+						<td class="perk-data">Yay</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">ACM T-Shirt</td>
+						<td class="perk-data"></td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Special Social Events</td>
+						<td class="perk-data"></td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Semesterly Retreat</td>
+						<td class="perk-data"></td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Game Nights</td>
+						<td class="perk-data">Extra Cost</td>
+						<td class="perk-data">Free</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Soda Tabs</td>
+						<td class="perk-data">Cash or Venmo only</td>
+						<td class="perk-data">Can open tabs</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Cost</td>
+						<td class="perk-data">FREE</td>
+						<td class="perk-data">$10 / year</td>
+					</tr>
+				</table>
+			</center>
 		
-		<div class="section-separaters" id="events-header">
+		<div class="section-separaters" id="events">
 			<h2 >Events</h2>
 		</div>
 		<div id="events-panel">
@@ -56,7 +187,7 @@
 						<img src="graphics/events/tech-talk.jpg" style="width: 100%"/>
 						<div class="card-info-container">
 							<h2 class="event-name">General <br/>Meetings</h2>
-							<p>Information</p>
+							<p>Enjoy free food and ACM's announcements at this bi-weekly meeting</p>
 						</div>
 					</div>
 				</div>	
@@ -65,7 +196,7 @@
 						<img src="graphics/events/tech-talk.jpg" style="width: 100%"/>
 						<div class="card-info-container">
 							<h2 class="event-name">Tech <br/>Talks</h2>
-							<p>Information</p>
+							<p>Meet company recruiters and learn about their company</p>
 						</div>
 					</div>
 				</div>
@@ -74,7 +205,7 @@
 						<img src="graphics/events/programming-competitions.jpg" style="width: 100%"/>
 						<div class="card-info-container">
 							<h2 class="event-name">Programming <br/>Competitions</h2>
-							<p>Information</p>
+							<p>Test your skills, become better programmers, and earn prizes!</p>
 						</div>
 					</div>
 				</div>
@@ -83,7 +214,7 @@
 						<img src="graphics/events/family-dinners.jpg" style="width: 100%"/>
 						<div class="card-info-container">
 							<h2 class="event-name">Family <br/>Dinners</h2>
-							<p>Information</p>
+							<p>Hang out with ACM by grabbing dinner together</p>
 						</div>
 					</div>
 				</div>
@@ -92,7 +223,7 @@
 						<img src="graphics/events/boardgames.jpg" style="width: 100%"/>
 						<div class="card-info-container">
 							<h2 class="event-name">Game <br/>Nights</h2>
-							<p>Information</p>
+							<p>Play videogames and board games all night long!</p>
 						</div>
 					</div>
 				</div>
@@ -101,7 +232,7 @@
 						<img src="graphics/events/camping.jpg" style="width: 100%"/>
 						<div class="card-info-container">
 							<h2 class="event-name">Camping <br/>Retreat</h2>
-							<p>Information</p>
+							<p>Take a break from studying and go camping!</p>
 						</div>
 					</div>
 				</div>
@@ -110,14 +241,14 @@
 						<img src="graphics/events/soccer.jpg" style="width: 100%"/>
 						<div class="card-info-container">
 							<h2 class="event-name">IM <br/>Soccer</h2>
-							<p>Information</p>
+							<p>Play soccer and have fun</p>
 						</div>
 					</div>
 				</div>
 						
 			</center>			
 		</div>
-		<div class="section-separaters" id="lockers-header">
+		<div class="section-separaters" id="lockers">
 			<h2 >Lockers</h2>
 		</div>
 		<div>
@@ -136,7 +267,10 @@
 					</ul>
 					<p>(@utexas.edu email required for signup)</p>
 				</div>
+				
 			</center>
+			<center>
+			<button class="button"><span><a href = "https://tinyurl.com/acmlockers2017" target = "_blank" style = "text-decoration: none; color: white; clear:both; display:block;">Register Now</a></span></button></center>
 
 
 		</div>
