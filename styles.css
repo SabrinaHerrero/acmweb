@@ -127,14 +127,10 @@ body {
 .unpaid-sponsors {
 	display:none;
 }
-.gold-sponsors {
-	height:200px;
-}
-.silver-sponsors {
+.sponsors {
+	/*height:200px;*/
 	height:100px;
-}
-.bronze-sponsors {
-	height:80px;
+	margin:5px 15px;
 }
 #sponsors-div {
 	clear:both;
