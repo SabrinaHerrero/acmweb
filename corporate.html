@@ -14,16 +14,18 @@
 			border-collapse:collapse;
 		}
 		.bronze-head {
-			/*background:#b38b6d;*/
+			background-color: #e5b864;
 			border-left: 1px solid white;
+			border-top-left-radius:10px; 
 		}
 		.silver-head {
-			/*background:#cccccc;*/
+			background-color: #e0e0d9;
 			border-left: 1px solid white;
 		}
 		.gold-head {
-			/*background:#ffd700;*/
+			background-color: #f7e36f;
 			border-left: 1px solid white;
+			border-top-right-radius:10px; 
 		}
 		table p {
 			padding:0px 10px;
@@ -102,33 +104,37 @@
 	</div>
 	<div id="main-panel" class="page-content">
 		<div id="sponsor-packages" >
-			<div class="section-separaters">
-				<h2 id="sponsor-package-header">Packages</h2>
+			<div class="section-header" id="sponsor-package-header">
+				<br/>
 			</div>
 			<center>
 			<table>
 				<tr>
 					<td class="label-row label-col" rowspan="2" style="text-align:left;">
-						<h1>Sponsor ACM<br/>Today!</h1>
-						<p><button class="contact-button" data-clipboard-text="corporate@texasacm.org"
-							aria-label="Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Copy Corporate Email</button></p>
+						<center><h1>Sponsor ACM Today!</h1>
+						<button class="button" data-clipboard-text="corporate@texasacm.org"
+							aria-label="Corporate Email Copied!" onclick="showTT(this)" onmouseout="hideTT(this)">Contact Corporate</button></center>
+							
 					</td>
 					<td class="label-row package-col bronze-head">
 						<h3>Bronze</h3>
 						<p>Basic package, best for companies starting up that want some visibility.</p>
+						<center><p style="background-color: gray; padding: 3px; color: white; width: 85%">$1000<sub> /year</sub></p></center>
 					</td>
 					<td class="label-row package-col silver-head">
 						<h3>Silver</h3>
 						<p>Engage with students on a personal basis to build lasting connections.</p>
+						<center><p style="background-color: gray; padding: 3px; color: white; width: 85%">$1000<sub> /year</sub></p></center>
 					</td>
 					<td class="label-row package-col gold-head">
 						<h3>Gold</h3>
 						<p>Interact with our entire membership to recruit the best students.</p>
+						<center><p style="background-color: gray; padding: 3px; color: white; width: 85%">$1000<sub> /year</sub></p></center>
 					</td>
 				</tr>
 				<tr>
 					<!-- td cell included in rowspan 2 -->
-					<td class="price-row package-col bronze-head">
+					<!--<td class="price-row package-col bronze-head">
 						<p>$1000<sub> /year</sub></p>
 					</td>
 					<td class="price-row package-col silver-head">
@@ -136,7 +142,7 @@
 					</td>
 					<td class="price-row package-col gold-head">
 						<p>$5000<sub> /year</sub></p>
-					</td>
+					</td> -->
 				</tr>
 				<tr>
 					<td class="label-col item-row perk-tb-data">
