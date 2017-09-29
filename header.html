@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<title>Header</title>
+	<link rel="icon" type="image/ico" href="graphics/icon.ico" />
+	<style type="text/css">
+	</style>
+	
+</head>
+
+<body>
+
+	<!-- All <a> Links require a target attribute, or else the link will open in the footer iframe -->
+
+	<div id="top-banner">
+		<div class="page-content">
+			<ul id="navigation">
+				<li id="logo-li"><a href="index.html"><img id="logo" src="graphics/logo.png" alt="ACM Logo"/></a></li>
+				<li></li>
+				<li class="nav-list"><a id="topnav-home" href="index.html" target="_parent">Home</a></li>
+				<li class="nav-list"><a id="topnav-about" href="about.html" target="_parent">About</a></li>
+				<li class="nav-list"><a id="topnav-member" href="membership-temporary.html" target="_parent">Membership</a></li>
+				<li class="nav-list"><a id="topnav-calendar" href="calendar.html" target="_parent">Calendar</a></li>
+				<li class="nav-list"><a id="topnav-corp" href="corporate.html" target="_parent">Corporate</a></li>				
+				<li class="connect"><a href="https://www.facebook.com/texas.acm" target="_parent"><img src="graphics/fb.png" align="middle" alt="Facebook" style="margin-left:10px;"/></a></li>
+				<li class="connect"><a href="https://discordapp.com/invite/7PtYCAm" target="_parent"><img src="graphics/discord.png" align="middle" alt="Discord"/></a></li>
+				
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">	
+		var url = window.location.href;
+		var queryString = url.substring(url.indexOf('?') + 1 );
+		document.getElementById(queryString).className = "active";
+	</script>
+
+</body>
+</html>
