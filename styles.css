@@ -39,20 +39,20 @@ body {
 	padding: 2.307vw 1.15vw;
 	color:black;
 	border-right: 1px solid silver;
-	border-bottom:0.23vw solid white;
+	border-bottom:0.3vw solid white;
 
 }
 .nav-list a:hover {
 	background-color: #88b3c2;
 	cursor: pointer;
 	color: white;
-	border-bottom:0.23vw solid blue;
+	border-bottom:0.3vw solid blue;
 	
 }
 .nav-list a.active {
     background-color:#c1f2ed;
 	color: black;
-	border-bottom:0.23vw solid	orange;
+	border-bottom:0.3vw solid	orange;
 }
 #navigation li a {		
 	display:inline-block;
