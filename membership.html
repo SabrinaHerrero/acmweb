@@ -6,120 +6,278 @@
 	<title>Membership Information</title>
 	<link rel="icon" type="image/ico" href="graphics/icon.ico" />
 	<style type="text/css">
-		.member-perks{
-			list-style-type: none;
-		    border: 1px solid  #aaa;
-		    margin: 0;
-		    padding: 0;
-		    -webkit-transition: 0.3s;
-		    transition: 0.3s;
-		}
-		.member-perks li {
-		    border-bottom: 1px solid #eee;
-		    padding: 20px;
-		    text-align: center;
-		}
-		.member-perks:hover {
-		    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-		}
-		.columns {
-		    float: left;
-		    width: 33.3%;
-		    padding: 8px;
-		}
-		.list-head{
-			background-color: #88b3c2;
-		    color: black;
-		    font-size: 25px;
-		}
+
+	.event-cards-col {
+		top:0px;
+		width:20%;
+		display:inline-block;
+		margin-bottom:16px;
+		padding: 0px 8px;
+		vertical-align:top;
+		text-align:left;
+		float:center;
+	}
+	.event-card {
+		box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+		padding:10px;
+	}
+	.card-info-container {
+		padding: 0px 16px 5px 16px;
+	}
+	.event-name {
+
+	}
+	#locker-picture {
+		width:20vw;
+		border:1px solid black;
+		margin-right: 20px;
+	}
+	#locker-picture, 
+	#locker-information {
+		display:inline-block;
+		float:center;
+	}
+	.perk-item {
+		width:30vw;
+	}
+	.perk-data {
+		width:20vw;
+		height:1.7vw;
+	}
+	.member-type{
+		background-color: #88b3c2;
+	    color: black;
+	    font-size: 25px;
+	    padding:10px;
+	    text-align: center;
+	}
+	.member-compare {
+		border-bottom:1px solid #aaaaaa;
+		list-style-type: none;
+	    border: 1px solid  #aaa;
+	    margin: 0;
+	    padding: 0;
+	    -webkit-transition: 0.3s;
+	    transition: 0.3s;
+	}
+	.member-compare:hover {
+	    box-shadow: 0 0 12px 0 rgba(0,0,0,0.5);
+	}
+
+	
+
+	
 	</style>
 </head>
 
 <body>
-	<div id="top-banner">
-		<div class="page-content">
-			<ul id="navigation">
-				<li id="logo-li"><a href="index.html"><img id="logo" src="graphics/logo.png" alt="ACM Logo"/></a></li>
-				<li></li>
-				<li class="nav-list"><a href="index.html">Home</a></li>
-				<li class="nav-list"><a href="about.html">About</a></li>
-				<li class="nav-list"><a href="membership.html" class="active">Membership</a></li>
-				<li class="nav-list"><a href="calendar.html">Calendar</a></li>
-				<li class="nav-list"><a href="corporate.html">Corporate</a></li>				
-				<li class="connect"><a href="https://www.facebook.com/texas.acm"><img src="graphics/fb.png" align="middle" alt="Facebook" style="margin-left:10px;"/></a></li>
-				<li class="connect"><a href="https://discordapp.com/invite/7PtYCAm"><img src="graphics/discord.png" align="middle" alt="Discord"/></a></li>
-				
-			</ul>
-		</div>
-	</div>
+	<iframe class="header-iframe" src="header.html?topnav-member" frameborder="0"  scrolling="no"></iframe>
+
 	<div id="main-panel" class="page-content">
-		<div>
-			<h1>Want to become a member? Already a member? Here is some information for you.</h1>
-			<div id = "sign-up">
-				<div class="section-separaters">
-					<h2>Membership Info</h2>
+		<div class="section-separaters" id="signup">
+			<h2 >Become a Member</h2>
+		</div>
+			<center><h2>Sign up today! Membership is only $10 / year. Fill out the form and see an ACM officer about payment.</h2>
+			<button class="button" style="margin-bottom: 1vw;" onclick="window.open('https://docs.google.com/forms/d/1Yleg3CEZOMNn41pRjJuAEa0PiZx4A7NTUR2TCJrORGI/viewform?edit_requested=true')"><span>Sign Up</span></button></center>
+			<center>
+				<table style="text-align: left;">
+					<tr>
+						<td class="perk-item"></td>
+						<td class="perk-data member-type">Basic Membership</td>
+						<td class="perk-data member-type">Full Membership</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Attend General Meetings</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Attend Tech Talks</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Compete in Prog Comps</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Access Tutoring</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Join IM Soccer Team</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Hangout in Office</td>
+						<td class="perk-data">Hang out any time!</td>
+						<td class="perk-data">Hang out any time!</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Attend Lecture Series</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Buy Sodas</td>
+						<td class="perk-data">$0.50</td>
+						<td class="perk-data">$0.50</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Rent a Locker</td>
+						<td class="perk-data">Large: $15, Small: $10</td>
+						<td class="perk-data">$5 Discount</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">ACM Office Coffee</td>
+						<td class="perk-data">FREE</td>
+						<td class="perk-data">FREE</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">ACM Office Library</td>
+						<td class="perk-data">Yes</td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Friends!</td>
+						<td class="perk-data">Yay</td>
+						<td class="perk-data">Yay</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">ACM T-Shirt</td>
+						<td class="perk-data"></td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Special Social Events</td>
+						<td class="perk-data"></td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Semesterly Retreat</td>
+						<td class="perk-data"></td>
+						<td class="perk-data">Yes</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Game Nights</td>
+						<td class="perk-data">$5</td>
+						<td class="perk-data">Free</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Soda Tabs</td>
+						<td class="perk-data">Cash or Venmo only</td>
+						<td class="perk-data">Can open tabs</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Cost</td>
+						<td class="perk-data">FREE</td>
+						<td class="perk-data">$10 / year</td>
+					</tr>
+				</table>
+			</center>
+		
+		<div class="section-separaters" id="events">
+			<h2 >Events</h2>
+		</div>
+		<div id="events-panel">
+			<center>
+				<div class="event-cards-col">
+					<div class="event-card">
+						<img src="graphics/events/presentation.png" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="event-name">General <br/>Meetings</h2>
+							<p>Enjoy free food and ACM's announcements at this bi-weekly meeting</p>
+						</div>
+					</div>
+				</div>	
+				<div class="event-cards-col">
+					<div class="event-card">
+						<img src="graphics/events/presentation.png" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="event-name">Tech <br/>Talks</h2>
+							<p>Meet company recruiters and learn about their company</p>
+						</div>
+					</div>
 				</div>
-				<button class="button"><span><a href = "http://www.google.com" target = "_blank" style = "text-decoration: none; color: white;">Sign Up</a></span></button>
-
-				<p>Membership fee is just <strong>$10</strong> for the whole year!</p>
-				<p>See an ACM officer about payment.</p>
-				
-				<div class = "columns">
-					<ul class = "member-perks" >
-						<li class = "list-head" >Standard Membership</li>
-						<li>Attend General Meetings</li>
-						<li>Access Tutoring</li>
-						<li>Go to Tech Talks</li>
-						<li>Participate in Programming Competitions</li>
-						<li>Join the IM Soccer Team</li>
-						<li>Attend Lecture Series</li>
-						<li>Access to the Office</li>
-					</ul>
+				<div class="event-cards-col">
+					<div class="event-card">
+						<img src="graphics/events/programming.png" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="event-name">Programming <br/>Competitions</h2>
+							<p>Test your skills, become better programmers, and earn prizes!</p>
+						</div>
+					</div>
 				</div>
-				<div class = "columns">
-					<ul class = "member-perks" >
+				<div class="event-cards-col">
+					<div class="event-card">
+						<img src="graphics/events/food.png" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="event-name">Family <br/>Dinners</h2>
+							<p>Hang out with ACM by grabbing dinner together</p>
+						</div>
+					</div>
+				</div>
+				<div class="event-cards-col">
+					<div class="event-card">
+						<img src="graphics/events/vgames.png" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="event-name">Game <br/>Nights</h2>
+							<p>Play videogames and board games all night long!</p>
+						</div>
+					</div>
+				</div>
+				<div class="event-cards-col">
+					<div class="event-card">
+						<img src="graphics/events/camping.png" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="event-name">Camping <br/>Retreat</h2>
+							<p>Take a break from studying and go camping!</p>
+						</div>
+					</div>
+				</div>
+				<div class="event-cards-col">
+					<div class="event-card">
+						<img src="graphics/events/soccer.png" style="width: 100%"/>
+						<div class="card-info-container">
+							<h2 class="event-name">IM <br/>Soccer</h2>
+							<p>Play soccer and have fun</p>
+						</div>
+					</div>
+				</div>
 						
-						<li class = "list-head">Paid Membership</li>
-						<li>Everything Standard Members Get</li>
-						<li>Camping Retreat</li>
-						<li>Gaming Nights</li>
-						<li>T-Shirts</li>
-						<li>$5 Off Lockers</li>
-						<li>Can open a tab for buying soda</li>
-					</ul>
-				</div>
-				
-
-			</div>
-			<div id = "events"> 
-				<div class="section-separaters">
-					<h2>About Our Events</h2>
-				</div>
-				<p>free food!</p>
-				<img src="graphics/free_food.jpg" style="height: 200px"></img>
-				<p> </p>
-			</div>
-			<div id = "lockers">
-				<div class="section-separaters">
-					<h2 >Rent a Locker!</h2>
-				</div>
-				<div>
-					<h3>Locations</h3>
+			</center>			
+		</div>
+		<div class="section-separaters" id="lockers">
+			<h2 >Lockers</h2>
+		</div>
+		<div>
+			<center>
+				<img id="locker-picture" src="graphics/lockers3.jpg"/>
+				<img id="locker-picture" src="graphics/lockers1.jpg"/>
+				<div id="locker-information" style="text-align: left;">
+					<h2>Locations</h2>
 					<ul>
 						<li>3rd Floor Lab</li>
-						<li>Basement Lab</li>
+						<li>1st Floor Basement Lab</li>
 					</ul>
-				</div>
-				<div>
-					<h3 >Cost</h3>
+					<h2>Cost</h2>
 					<ul>
-						<li>Small Locker: $10</li>
-						<li>Large Locker: $20</li>
+						<li>Small Locker: $10 / year</li>
+						<li>Large Locker: $15 / year</li>
 					</ul>
-					<p>Cost covers rental for both Fall and Spring semesters.</p>
+					<p>(@utexas.edu email required for signup)</p>
 				</div>
-			</div>
+				
+			</center>
+			<center>
+			<button class="button" style="margin-bottom: 2vw;" onclick="window.open('https://tinyurl.com/acmlockers2017')"><span>Register Now</span></button></center>
+
+
 		</div>
+		
 	</div>
 
 	<!-- Footer -->
