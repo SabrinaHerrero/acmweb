@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<title></title>
+	<link rel="icon" type="image/ico" href="graphics/icon.ico" />
+	<style type="text/css">
+	
+	</style>
+</head>
+
+<body>
+	<iframe class="header-iframe" src="header.html" frameborder="0"  scrolling="no"></iframe>
+
+	<div id="main-panel" class="page-content">
+		<iframe src="https://docs.google.com/document/d/e/2PACX-1vSVvyypDzyvvmM4KmEZ4hSfuyWOhSlsxMbDWDcvPVdiK8XrkhQh6gIJtMjZD7ytxNh0TcU0tBls9AdX/pub?embedded=true" style="width:800px; height:300px; margin-top: 10px; border:1px solid black;" scrolling="no" frameborder="0"></iframe>
+	</div>
+
+	<!-- Footer -->
+	<iframe class="footer-iframe" src="footer.html" frameborder="0"  scrolling="no"></iframe>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<!-- <script type="text/javascript">
+
+		var sheetID = "1v7K0JPmdm0wUWLi-fOlYIry2w6FOVr2UeO8cDH1l0qw";
+		console.log(get("https://spreadsheets.google.com/tq?tqx=out:html&tq=&key=1v7K0JPmdm0wUWLi-fOlYIry2w6FOVr2UeO8cDH1l0qw&gid=0"));
+		// loadJSON("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ40-gA1OsfINl5SEhCA0rdevQGkiMomnVbd--IP3a3ktdRysfRP19XIiwThoC_jxuLJl0Jmb6UwXlC/pubhtml", gotData);
+
+		// function gotData(data) {
+		// 	console.log(data);
+		// }
+		// google.load("visualization", "1.1", {packages:["table"]});
+		// var sheetsURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ40-gA1OsfINl5SEhCA0rdevQGkiMomnVbd--IP3a3ktdRysfRP19XIiwThoC_jxuLJl0Jmb6UwXlC/pubhtml";
+		// var query = new google.visualization.Query(sheetsURL);
+		// query.setQuery('select dept, sum(salary) group by dept');
+		// query.send(handleQueryResponse);
+
+	</script> -->
+	<script type="text/javascript">
+		var URL = 'https://spreadsheets.google.com/tq?tqx=out:html&tq=&key=1v7K0JPmdm0wUWLi-fOlYIry2w6FOVr2UeO8cDH1l0qw&gid=0"'
+    function loadXMLDoc(URL)
+    {
+        if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+            	console.log("Done");
+            	console.log(xml.http.text);
+                alert(xmlhttp.responseText);
+            }
+        }
+        xmlhttp.open("GET", theURL, false);
+        xmlhttp.send();
+    }
+</script>
+	
+</body>
+</html>
