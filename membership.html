@@ -27,22 +27,28 @@
 	.event-name {
 
 	}
-	#locker-picture {
+	.picture {
 		width:20vw;
 		border:1px solid black;
 		margin-right: 20px;
+		margin-bottom:20px;
 	}
-	#locker-picture, 
-	#locker-information {
+	.picture, 
+	.information {
 		display:inline-block;
 		float:center;
+		vertical-align: middle;
+	}
+	.information {
+		text-align: left;
 	}
 	.perk-item {
-		width:30vw;
+		width:20vw;
 	}
 	.perk-data {
-		width:20vw;
+		width:15vw;
 		height:1.7vw;
+		text-align: center;
 	}
 	.member-type{
 		background-color: #88b3c2;
@@ -64,6 +70,24 @@
 	    box-shadow: 0 0 12px 0 rgba(0,0,0,0.5);
 	}
 
+	td img{
+		width:1.5vw;
+		text-align:center;
+		vertical-align:middle;
+		display:inline-block;
+	}
+
+	#locker-price-link {
+		color:black;
+		font-style:italic;
+	}
+	#locker-price-link:hover {
+		color:orange;
+	}
+
+
+
+
 	
 
 	
@@ -83,43 +107,65 @@
 				<table style="text-align: left;">
 					<tr>
 						<td class="perk-item"></td>
-						<td class="perk-data member-type">Basic Membership</td>
-						<td class="perk-data member-type">Full Membership</td>
+						<td class="perk-data member-type">Basic Member</td>
+						<td class="perk-data member-type">Full Member</td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Resume Book</td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
 					</tr>
 					<tr class="member-compare">
 						<td class="perk-item">Attend General Meetings</td>
-						<td class="perk-data">Yes</td>
-						<td class="perk-data">Yes</td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
 					</tr>
 					<tr class="member-compare">
 						<td class="perk-item">Attend Tech Talks</td>
-						<td class="perk-data">Yes</td>
-						<td class="perk-data">Yes</td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
 					</tr>
 					<tr class="member-compare">
 						<td class="perk-item">Compete in Prog Comps</td>
-						<td class="perk-data">Yes</td>
-						<td class="perk-data">Yes</td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
 					</tr>
 					<tr class="member-compare">
 						<td class="perk-item">Access Tutoring</td>
-						<td class="perk-data">Yes</td>
-						<td class="perk-data">Yes</td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
 					</tr>
 					<tr class="member-compare">
 						<td class="perk-item">Join IM Soccer Team</td>
-						<td class="perk-data">Yes</td>
-						<td class="perk-data">Yes</td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
 					</tr>
-					<tr class="member-compare">
-						<td class="perk-item">Hangout in Office</td>
-						<td class="perk-data">Hang out any time!</td>
-						<td class="perk-data">Hang out any time!</td>
-					</tr>
+					
 					<tr class="member-compare">
 						<td class="perk-item">Attend Lecture Series</td>
-						<td class="perk-data">Yes</td>
-						<td class="perk-data">Yes</td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">ACM Office Coffee</td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">ACM Office Library</td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Game Nights</td>
+						<td class="perk-data">$5</td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Rent a Locker</td>
+						<td class="perk-data"><a id="locker-price-link" href="membership.html#lockers">Full Price</a></td>
+						<td class="perk-data">$5 off</td>
 					</tr>
 					<tr class="member-compare">
 						<td class="perk-item">Buy Sodas</td>
@@ -127,50 +173,26 @@
 						<td class="perk-data">$0.50</td>
 					</tr>
 					<tr class="member-compare">
-						<td class="perk-item">Rent a Locker</td>
-						<td class="perk-data">Large: $15, Small: $10</td>
-						<td class="perk-data">$5 Discount</td>
-					</tr>
-					<tr class="member-compare">
-						<td class="perk-item">ACM Office Coffee</td>
-						<td class="perk-data">FREE</td>
-						<td class="perk-data">FREE</td>
-					</tr>
-					<tr class="member-compare">
-						<td class="perk-item">ACM Office Library</td>
-						<td class="perk-data">Yes</td>
-						<td class="perk-data">Yes</td>
-					</tr>
-					<tr class="member-compare">
-						<td class="perk-item">Friends!</td>
-						<td class="perk-data">Yay</td>
-						<td class="perk-data">Yay</td>
-					</tr>
-					<tr class="member-compare">
-						<td class="perk-item">ACM T-Shirt</td>
-						<td class="perk-data"></td>
-						<td class="perk-data">Yes</td>
-					</tr>
-					<tr class="member-compare">
-						<td class="perk-item">Special Social Events</td>
-						<td class="perk-data"></td>
-						<td class="perk-data">Yes</td>
-					</tr>
-					<tr class="member-compare">
-						<td class="perk-item">Semesterly Retreat</td>
-						<td class="perk-data"></td>
-						<td class="perk-data">Yes</td>
-					</tr>
-					<tr class="member-compare">
-						<td class="perk-item">Game Nights</td>
-						<td class="perk-data">$5</td>
-						<td class="perk-data">Free</td>
-					</tr>
-					<tr class="member-compare">
 						<td class="perk-item">Soda Tabs</td>
 						<td class="perk-data">Cash or Venmo only</td>
 						<td class="perk-data">Can open tabs</td>
 					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">ACM T-Shirt</td>
+						<td class="perk-data"></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Special Social Events</td>
+						<td class="perk-data"></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+					</tr>
+					<tr class="member-compare">
+						<td class="perk-item">Semesterly Retreat</td>
+						<td class="perk-data"></td>
+						<td class="perk-data yes"><img src="graphics/check.png"/></td>
+					</tr>
+					
 					<tr class="member-compare">
 						<td class="perk-item">Cost</td>
 						<td class="perk-data">FREE</td>
@@ -255,9 +277,9 @@
 		</div>
 		<div>
 			<center>
-				<img id="locker-picture" src="graphics/lockers3.jpg"/>
-				<img id="locker-picture" src="graphics/lockers1.jpg"/>
-				<div id="locker-information" style="text-align: left;">
+				<img class="picture" src="graphics/lockers3.jpg"/>
+				<img class="picture" src="graphics/lockers1.jpg"/>
+				<div class="information">
 					<h2>Locations</h2>
 					<ul>
 						<li>3rd Floor Lab</li>
@@ -268,14 +290,26 @@
 						<li>Small Locker: $10 / year</li>
 						<li>Large Locker: $15 / year</li>
 					</ul>
-					<p>(@utexas.edu email required for signup)</p>
+					
 				</div>
 				
 			</center>
 			<center>
-			<button class="button" style="margin-bottom: 2vw;" onclick="window.open('https://tinyurl.com/acmlockers2017')"><span>Register Now</span></button></center>
-
-
+			<button class="button" style="margin-bottom: 2vw;" onclick="window.open('https://tinyurl.com/acmlockers2017')"><span>Register Now</span></button><p style="margin-top:0px; padding-top:0px;">(@utexas.edu email required for signup)</center>
+		</div>
+		<div class="section-separaters" id="resume-book">
+			<h2 >Resume Book</h2>
+		</div>
+		<div>
+			<center>
+				<img class="picture" src="https://cdn.pixabay.com/photo/2015/10/29/12/08/book-1012275_960_720.jpg"/>
+				<div class="information">
+					<h3>Add your resume here,<br/>
+					have companies reach out to you!<br/></h3></h3>
+					<button class="button" style="margin-bottom: 1vw;" onclick="window.open('https://apps.cs.utexas.edu/resume/login.scgi')"><span>Attach Resume</span></button>
+					
+				
+			</center>
 		</div>
 		
 	</div>
