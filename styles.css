@@ -176,4 +176,9 @@ body {
   opacity: 1;
   right: 0;
 }
+.button:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #ef7e21;
+}
 
