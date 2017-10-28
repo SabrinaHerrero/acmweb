@@ -2,35 +2,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="../styles.css"/>
-	<title></title>
-	<link rel="icon" type="image/ico" href="../graphics/icon.ico" />
+	<link rel="stylesheet" type="text/css" href="http://texasacm.org/css/styles.css"/>
+	<title>Sign In</title>
+	<link rel="icon" type="image/ico" href="http://texasacm.org/graphics/icon.ico" />
 	<style type="text/css">
 	</style>
-	
-
+	<script type="text/javascript" src="../javascript/tabletop.js"></script>
 	<script type="text/javascript">
-		//Redirect Link
-		//window.location.replace("../signin-not-available.html");
-		
-		//Capital One Workshop
-		window.location.replace("https://docs.google.com/forms/d/e/1FAIpQLScODdNNbcKyt-I8w8RsKXX-b3jZODg71tWucfnr9QYyEcSWpA/viewform");
+	
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1v7K0JPmdm0wUWLi-fOlYIry2w6FOVr2UeO8cDH1l0qw/edit?usp=sharing';
 
-		//CS411 Upperdiv 10/25 4:30PM
-		//window.location.replace("https://l.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLScH8KKjWuDGwE7v1rY_JC0OjPuv4sGNlbNGmJNlCn_fs4MK0g%2Fviewform%3Fusp%3Dsf_link&h=ATPW7QKfnXPzvrMkr7ShqauQH-1N3i1KUzV5MeJCoqwcQFw476CVnCxRQ4NOZtpsQT-taVdEcdOdiwJAyR4sOkRnGnTC0zZlUFYjDg4_N7OMfQFOkw-vqiYUeYMaXkGROB1efbxPyQl_5w");
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } );
+      }
 
-		//Lecture Series 10/26 4PM
-		//window.location.replace("https://l.messenger.com/l.php?u=https%3A%2F%2Fgoo.gl%2Fforms%2FPD6WjVvzYsXLaER83&h=ATMR1Dtf_YRO6CU3oI237wEL4FVBLuH_VFpvU6txjR8u5jWDJICEqJvqiyR4tTXOhXOi5SfFLKmopLszHws1n3bJK4_IZOXBZYIrEaTz95Dl91wvvjDEvXePj1EMyp475Fdkj_GTCeyoJlm1oB4");
+      window.addEventListener('DOMContentLoaded', init)
 
-		//General Meeting 10/26 7PM
-		//window.location.replace("tinyURL.com/ACMGM");
-		//testing GitHub commit
+      function showInfo(data) {
+        	window.location.replace(data[0].Address);
+      }
 		
 	</script>
 </head>
 
 <body>
 	<iframe class="header-iframe" src="../header.html" frameborder="0"  scrolling="no"></iframe>
+
+	<div id="main-panel" class="page-content">
+		<center>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8tf5gpgd7rcvxuQPZ3Li5le1I01ky9xCYs12WsgWxZ6wa9G-" style="padding:10vh 0px 0px 0px;" alt="Warning Icon"/>
+			<h2 style="padding: 0px 0px 0px 0px">No events available to sign in at this time.</h2>
+			<h3 style="padding: 0px 0px 10vh 0px">Try again later.</h3>
+		</center>
+	</div>
 
 	<!-- Footer -->
 	<iframe class="footer-iframe" src="../footer.html" frameborder="0"  scrolling="no"></iframe>

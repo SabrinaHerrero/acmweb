@@ -2,21 +2,43 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="../styles.css"/>
-	<title></title>
-	<link rel="icon" type="image/ico" href="../graphics/icon.ico" />
+	<link rel="stylesheet" type="text/css" href="http://texasacm.org/css/styles.css"/>
+	<title>ProgComp Sign In</title>
+	<link rel="icon" type="image/ico" href="http://texasacm.org/graphics/icon.ico" />
 	<style type="text/css">
 	</style>
-	
-
+	<script type="text/javascript" src="../javascript/tabletop.js"></script>
 	<script type="text/javascript">
-		//Redirect Link
-		window.location.replace("../signin-not-available.html");
+	
+      //var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1VPXjFZD7oW7UFWoCAuNtRC4ggC_xH0bFu5_Bav4rPfY/edit?usp=sharing';
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1VPXjFZD7oW7UFWoCAuNtRC4ggC_xH0bFu5_Bav4rPfY/edit?usp=sharing';
+
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } );
+      }
+
+      window.addEventListener('DOMContentLoaded', init)
+
+      function showInfo(data) {
+        	window.location.replace(data[0].Address);
+      }
+		
 	</script>
 </head>
 
 <body>
 	<iframe class="header-iframe" src="../header.html" frameborder="0"  scrolling="no"></iframe>
+
+	<div id="main-panel" class="page-content">
+		<center>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8tf5gpgd7rcvxuQPZ3Li5le1I01ky9xCYs12WsgWxZ6wa9G-" style="padding:10vh 0px 0px 0px;" alt="Warning Icon"/>
+			<h2 style="padding: 0px 0px 0px 0px">No events available to sign in at this time.</h2>
+			<h3 style="padding: 0px 0px 10vh 0px">Try again later.</h3>
+		</center>
+	</div>
 
 	<!-- Footer -->
 	<iframe class="footer-iframe" src="../footer.html" frameborder="0"  scrolling="no"></iframe>
